@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Sarabun', sans-serif;
+        background-color: white;
+      }
+      #nav-one {
+        background-color: #262626;
+        height: 30px;
+        color: white;
+      }
+      #nav-two {
+        background-color: #FFFFFA;
+        height: 80px;
+      }
+      #logo {
+        text-transform: uppercase;
+        font-size: -webkit-xxx-large;
+        font-weight: lighter;
+      }
+      .badge {
+        padding-left: 9px;
+        padding-right: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        border-radius: 9px;
+      }
+
+      .label-warning[href],
+      .badge-warning[href] {
+        background-color: #c67605;
+      }
+
+      #lblCartCount {
+          font-size: 12px;
+          background: #ff0000;
+          color: #fff;
+          padding: 0 5px;
+          vertical-align: top;
+          margin-left: -10px; 
+      }
+
+      .jumbotron {
+        /* background-image: url('https://wallpaperaccess.com/full/1496231.jpg'); */
+        background-image: url('https://cdn.pixabay.com/photo/2017/12/26/09/15/woman-3040029_1280.jpg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        height: 600px;
+      }
+      
+      img {
+        width:100%;
+        max-width: width auto;;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section id="navbar">
+      <nav id="nav-one" class="navbar navbar-expand-sm">
+        <div class="container d-flex justify-content-end align-items-center">
+          <div class="pr-2">
+            <lable>sign in</lable>
+            <lable class="ml-3">register</lable>
+          </div>
+  
+        </div>
+      </nav>
+      <nav id="nav-two" class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+          <h1 id="logo" class="navbar">Show Me</h1>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-shopping-cart" style="font-size: 100%;"></i>
+                  <span class='badge badge-warning' id='lblCartCount'> 5 </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section id="jumbotron">
+      <div class="jumbotron jumbotron-fluid d-flex align-items-end">
+        <div class="container ">
+          <h1 class="display-4 text-right">Fluid jumbotron</h1>
+          <p class="lead text-right">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="content" class="mt-5">
+      <div class="container">
+        <h1 class="text-center text-uppercase text-monospace font-weight-bold mb-4"> Hot Products !</h1>
+        <div class="row">
+          <div class="col">
+            <div class="card shadow bg-white rounded">
+              <img 
+                src="https://cdn.shopify.com/s/files/1/1132/3440/products/image_9453d00e-e016-43f9-9c86-866bf34fe346_large.jpg?v=1576197000" 
+                class="card-img-top" 
+                alt=""
+              >
+              <div class="card-body text-center ">
+                <a href="" class="">
+                  <h5>Shirt</h5>
+                </a>
+                <h5>
+                  <strong>
+                    <a href="" class="">Denim shirt
+                      <span class="">NEW</span>
+                    </a>
+                  </strong>
+                </h5>
+
+                <h4 class="">
+                  <strong>120$</strong>
+                </h4>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow bg-white rounded">
+              <div class="view overlay">
+                <img src="https://cdn.shopify.com/s/files/1/1132/3440/products/D82D6532-AA1B-46D7-9984-32D0FAFCC3EB_large.jpg?v=1574474907" class="card-img-top" alt="">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <a href="" class="">
+                  <h5>Sport wear</h5>
+                </a>
+                <h5>
+                  <strong>
+                    <a href="" class="">Sweatshirt</a>
+                  </strong>
+                </h5>
+                <h4 class="">
+                  <strong>139$</strong>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow bg-white rounded">
+              <div class="view overlay">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg" class="card-img-top" alt="">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <a href="" class="grey-text">
+                  <h5>Sport wear</h5>
+                </a>
+                <h5>
+                  <strong>
+                    <a href="" class="dark-grey-text">Grey blouse
+                      <span class="badge badge-pill primary-color">bestseller</span>
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold blue-text">
+                  <strong>99$</strong>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <div class="card shadow bg-white rounded">
+              <div class="view overlay">
+                <img src="https://cdn.shopify.com/s/files/1/1132/3440/products/image_e2592169-e49b-4c30-9a6d-691a99a21a4f_large.jpg?v=1571709539" class="card-img-top" alt="">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <a href="" class="grey-text">
+                  <h5>Sport wear</h5>
+                </a>
+                <h5>
+                  <strong>
+                    <a href="" class="dark-grey-text">Grey blouse
+                      <span class="badge badge-pill primary-color">bestseller</span>
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="font-weight-bold blue-text">
+                  <strong>99$</strong>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow bg-white rounded">
+              <div class="view overlay">
+                <img src="https://cdn.shopify.com/s/files/1/1132/3440/products/image_9453d00e-e016-43f9-9c86-866bf34fe346_large.jpg?v=1576197000" class="card-img-top" alt="">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <a href="" class="">
+                  <h5>Sport wear</h5>
+                </a>
+                <h5>
+                  <strong>
+                    <a href="" class="">Sweatshirt</a>
+                  </strong>
+                </h5>
+                <h4 class="">
+                  <strong>139$</strong>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow bg-white rounded">
+              <div class="view overlay">
+                <img src="https://cdn.shopify.com/s/files/1/1132/3440/products/image_9453d00e-e016-43f9-9c86-866bf34fe346_large.jpg?v=1576197000" class="card-img-top" alt="">
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <div class="card-body text-center">
+                <a href="" class="">
+                  <h5>Shirt</h5>
+                </a>
+                <h5>
+                  <strong>
+                    <a href="" class="">Denim shirt
+                      <span class="">NEW</span>
+                    </a>
+                  </strong>
+                </h5>
+                <h4 class="">
+                  <strong>120$</strong>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-5"/>
+      </div>
+    </section>
+
+    <section id="footer" class="mt-5">
+      <div class="row d-flex justify-content-center">
+        <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+          <i class="fab fa-facebook-f mr-3"></i>
+        </a>
+        <a href="https://twitter.com/MDBootstrap" target="_blank">
+          <i class="fab fa-twitter mr-3"></i>
+        </a>
+        <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+          <i class="fab fa-github mr-3"></i>
+        </a>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <p class="text-center">
+          © COPYRIGHT WARAPHON ROONNAPAI 2020
+        </p>
+      </div>
+    </section>
+  </body>
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+  />
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+</html>
